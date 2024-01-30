@@ -1,0 +1,3 @@
+.item-have-list:hover > .list {
+    display: block;
+}
