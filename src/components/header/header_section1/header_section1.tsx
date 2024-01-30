@@ -1,3 +1,5 @@
+import Link from 'next/link';
+
 export default function HeaderSection1() {
     return (
         <div className="w-full h-32 border-b border-gray-400 text-white flex justify-between items-center">
@@ -15,7 +17,9 @@ export default function HeaderSection1() {
                 </ul>
             </div>
             <div>
-                <span className="font-bold text-5xl">MyBlog</span>
+                <Link href="/">
+                    <span className="font-bold text-5xl">MyBlog</span>
+                </Link>
             </div>
             <div>
                 <ul className="flex justify-between items-center">
