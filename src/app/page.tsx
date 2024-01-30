@@ -6,5 +6,9 @@ import HomepageSocial from '@/components/homepage_components/homepage_social/hom
 import HomeSocialItem from '@/components/homepage_components/homepage_social/homepage_social_item';
 
 export default function Home() {
-    return <Footer />;
+  return (
+    <main className="">
+      
+    </main>
+  );
 }
