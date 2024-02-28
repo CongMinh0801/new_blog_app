@@ -1,0 +1,7 @@
+.parent-block:hover .right-btn {
+    transform: translateX(0);
+}
+
+.parent-block:hover .left-btn {
+    transform: translateX(0);
+}

@@ -10,9 +10,9 @@ export default function HeaderSection2() {
         setShowSearch(!showSearch);
     };
     return (
-        <div>
+        <div className="hidden md:block">
             {!showSearch ? (
-                <div className="flex h-10 justify-between items-center transition-all">
+                <div className="flex h-10 justify-between items-center transition-all ">
                     <div className="flex justify-between items-center">
                         <div className="px-4 py-2 h-full flex justify-between items-center text-white text-sm font-medium cursor-pointer hover:bg-gray-300 hover:bg-opacity-70">
                             Home
