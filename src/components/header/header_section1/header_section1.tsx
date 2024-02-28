@@ -2,8 +2,8 @@ import Link from 'next/link';
 
 export default function HeaderSection1() {
     return (
-        <div className="w-full h-32 border-b border-gray-400 text-white flex justify-between items-center">
-            <div className="">
+        <div className="w-full h-32 border-none md:border-b border-gray-400 text-white flex justify-between items-center">
+            <div className="hidden md:block">
                 <ul className="flex justify-between items-center">
                     <li className="px-2 py-1 border-b border-transparent hover:border-b hover:border-gray-400 cursor-pointer transition-all">
                         Home
@@ -21,7 +21,7 @@ export default function HeaderSection1() {
                     <span className="font-bold text-5xl">MyBlog</span>
                 </Link>
             </div>
-            <div>
+            <div className="hidden md:block">
                 <ul className="flex justify-between items-center">
                     <li className="text-white mx-2">
                         <svg
@@ -75,6 +75,24 @@ export default function HeaderSection1() {
                         </svg>
                     </li>
                 </ul>
+            </div>
+            <div className="block md:hidden">
+                <button>
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        strokeWidth="1.5"
+                        stroke="currentColor"
+                        className="w-6 h-6"
+                    >
+                        <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            d="M8.25 6.75h12M8.25 12h12m-12 5.25h12M3.75 6.75h.007v.008H3.75V6.75Zm.375 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0ZM3.75 12h.007v.008H3.75V12Zm.375 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm-.375 5.25h.007v.008H3.75v-.008Zm.375 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z"
+                        />
+                    </svg>
+                </button>
             </div>
         </div>
     );
